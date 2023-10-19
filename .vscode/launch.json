@@ -1,0 +1,69 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "bloc_playground",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "bloc_playground (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "bloc_playground (release mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "authentication_repository",
+      "cwd": "packages/authentication_repository",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "meta_weather_api",
+      "cwd": "packages/meta_weather_api",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "open_meteo_api",
+      "cwd": "packages/open_meteo_api",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "open_meteo_api (profile mode)",
+      "cwd": "packages/open_meteo_api",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "open_meteo_api (release mode)",
+      "cwd": "packages/open_meteo_api",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "user_repository",
+      "cwd": "packages/user_repository",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "weather_repository",
+      "cwd": "packages/weather_repository",
+      "request": "launch",
+      "type": "dart"
+    }
+  ]
+}
