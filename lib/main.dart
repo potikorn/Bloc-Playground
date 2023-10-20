@@ -2,8 +2,10 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:bloc_playground/app.dart';
+import 'package:bloc_playground/firebase_options.dart';
 import 'package:bloc_playground/injector.dart';
 import 'package:bloc_playground/simple_bloc_observer.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
@@ -21,6 +23,9 @@ void main() {
         storageDirectory: kIsWeb
             ? HydratedStorage.webStorageDirectory
             : await getTemporaryDirectory(),
+      );
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
       );
       initializeDependencies();
       return runApp(const BlocPlaygroundApp());

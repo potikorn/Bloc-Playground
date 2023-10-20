@@ -37,7 +37,6 @@ dependencies:
   bloc_concurrency: ^0.2.2
   http: ^1.1.0
   stream_transform: ^2.1.0
-  formz: ^0.4.0
 
   authentication_repository:
     path: packages/authentication_repository
@@ -51,6 +50,8 @@ dependencies:
     path: packages/local_storage_todos_api
   todos_api:
     path: packages/todos_api
+  firebase_auth_repository:
+    path: packages/firebase_auth_repository
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -60,6 +61,9 @@ dependencies:
   google_fonts: ^6.1.0
   hydrated_bloc: ^9.1.2
   get_it: ^7.6.4
+  firebase_core: ^2.18.0
+  formz: ^0.6.1
+  font_awesome_flutter: ^10.6.0
 
 dev_dependencies:
   bloc_test: ^9.1.4

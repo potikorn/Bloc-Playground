@@ -1,5 +1,6 @@
 import 'package:authentication_repository/authentication_repository.dart';
 import 'package:bloc_playground/features/bloc_authentication/bloc_authentication_app.dart';
+import 'package:bloc_playground/features/firebase_login/firebase_login_app.dart';
 import 'package:bloc_playground/features/timer/timer.dart';
 import 'package:bloc_playground/features/infinite_list/view/posts_page.dart';
 import 'package:bloc_playground/features/todo/todo_app.dart';
@@ -79,6 +80,14 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return const TodoApp();
+                }));
+              },
+            ),
+            ListTile(
+              title: const Text('Firebase Login'),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const FirebaseLoginApp();
                 }));
               },
             ),

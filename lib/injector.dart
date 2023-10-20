@@ -1,3 +1,4 @@
+import 'package:firebase_auth_repository/firebase_auth_repository.dart';
 import 'package:get_it/get_it.dart';
 import 'package:local_storage_todos_api/local_storage_todos_api.dart';
 import 'package:todos_repository/todos_repository.dart';
@@ -17,4 +18,8 @@ void initializeDependencies() {
   getIt.registerLazySingleton<TodosRepository>(
     () => TodosRepository(todosApi: getIt.get<LocalStorageTodosApi>()),
   );
+
+  getIt.registerLazySingleton<FirebaseAuthRepository>(() {
+    return FirebaseAuthRepository();
+  });
 }
